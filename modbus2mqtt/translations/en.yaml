@@ -1,0 +1,9 @@
+configuration:
+  ssh:
+    name: SSH Options
+    description: Configure SSH authentication options
+    fields:
+      user_pubkey:
+        name: User Public Key
+        description: Public Key for SSH authentication. Only key-based authentication is supported. Leave empty to disable SSH access.
+        example: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAr... user@host
