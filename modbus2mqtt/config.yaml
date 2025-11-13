@@ -24,7 +24,7 @@ ingress_port: 3000
 ingress_stream: true
 ports:
   502/tcp: null
-  "22/tcp": null
+  22/tcp: null
 ports_description:
   502/tcp: "TCP Bridge port"
   22/tcp: "SSH port to expose on host (if host_network is false)"
