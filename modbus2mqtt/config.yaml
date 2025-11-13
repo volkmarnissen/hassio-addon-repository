@@ -28,4 +28,7 @@ ports:
 ports_description:
   502/tcp: "TCP Bridge port"
   22/tcp: "SSH port to expose on host (if host_network is false)"
-
+options:
+  user_pubkey: ""
+schema:
+  user_pubkey: str?
