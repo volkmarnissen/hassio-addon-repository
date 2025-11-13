@@ -1,9 +1,5 @@
 configuration:
-  ssh:
-    name: SSH Optionen
-    description: Konfigurieren Sie die SSH-Authentifizierungsoptionen
-    fields:
-      user_pubkey:
-        name: Benutzer-öffentlicher Schlüssel
-        description: Öffentlicher Schlüssel für die SSH-Authentifizierung. Es wird nur schlüsselbasierte Authentifizierung unterstützt. Lassen Sie das Feld leer, um den SSH-Zugang zu deaktivieren.
-        example: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAr... user@host
+  user_pubkey:
+    name: Benutzer-öffentlicher Schlüssel
+    description: Öffentlicher Schlüssel für die SSH-Authentifizierung. Es wird nur schlüsselbasierte Authentifizierung unterstützt. Lassen Sie das Feld leer, um den SSH-Zugang zu deaktivieren.
+    example: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAr... user@host
