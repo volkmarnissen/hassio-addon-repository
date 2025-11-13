@@ -28,9 +28,4 @@ ports:
 ports_description:
   502/tcp: "TCP Bridge port"
   22/tcp: "SSH port to expose on host (if host_network is false)"
-options:
-  ssh_port: 22
-  user_pubkey: ""
-schema:
-  ssh_port: int(22, 65535)
-  user_pubkey: str?
+
