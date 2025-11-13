@@ -34,7 +34,3 @@ options:
 schema:
   ssh_port: int(22, 65535)
   user_pubkey: str?
-ports:
-  22/tcp: null
-ports_description:
-  22/tcp: "SSH port to expose on host (if host_network is false)"  
