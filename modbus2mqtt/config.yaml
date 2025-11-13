@@ -24,7 +24,17 @@ ingress_port: 3000
 ingress_stream: true
 ports:
   502/tcp: null
-  9229/tcp: null
+  "22/tcp": null
 ports_description:
-  502/tcp: TCP Bridge port
-  9229/tcp: Map node debug port
+  502/tcp: "TCP Bridge port"
+  22/tcp: "SSH port to expose on host (if host_network is false)"
+options:
+  ssh_port: 22
+  user_pubkey: ""
+schema:
+  ssh_port: int(1, 65535)
+  user_pubkey: str?
+ports:
+  22/tcp: null
+ports_description:
+  22/tcp: "SSH port to expose on host (if host_network is false)"  
